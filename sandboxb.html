@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <input class="textInput" type="text">
+  <p></p>
+
+  <script>
+    const input = document.querySelector('.textInput');
+    const para = document.querySelector('p');
+
+    function favoriteAnimal(animal) {
+      return animal;
+    }
+
+    // console.log(favoriteAnimal('Goat'))
+
+    input.addEventListener("change", () => {
+      const fav = input.value;
+      para.textContent = `Your favorite animal is ${favoriteAnimal(fav)}`;
+    });
+
+  </script>
+
+</body>
+</html>
