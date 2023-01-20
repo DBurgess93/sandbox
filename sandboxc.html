@@ -13,11 +13,43 @@
 
   <script>
 
-    let sayHi = function() {
-      alert( "Hello ");
-    };
+    // let sayHi = function() {
+    //   alert( "Hello ");
+    // };
 
-    alert( sayHi );
+    // alert( sayHi );
+
+    // function sayHi() {
+    //   alert( "Hello" );
+    // }
+
+    // let func = sayHi;
+
+    // func();
+    // sayHi();
+
+    // let sayHi = function() {
+    //   alert( "Hello" );
+    // };
+
+    // let func = sayHi;
+
+    // alert( func() )
+
+    function ask(question, yes, no) {
+      if (confirm(question)) yes()
+      else no();
+    }
+
+    function showOk() {
+      alert( "You agreed." );
+    }
+
+    function showCancel() {
+      alert( "You cancelled the execution." );
+    }
+
+    ask("Do you agree?", showOk, showCancel);
 
   </script>
 
