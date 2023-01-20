@@ -19,6 +19,7 @@
 
     // alert( sayHi );
 
+
     // function sayHi() {
     //   alert( "Hello" );
     // }
@@ -28,6 +29,7 @@
     // func();
     // sayHi();
 
+
     // let sayHi = function() {
     //   alert( "Hello" );
     // };
@@ -36,20 +38,34 @@
 
     // alert( func() )
 
-    function ask(question, yes, no) {
-      if (confirm(question)) yes()
-      else no();
-    }
 
-    function showOk() {
-      alert( "You agreed." );
-    }
+    // function ask(question, yes, no) {
+    //   if (confirm(question)) yes()
+    //   else no();
+    // }
 
-    function showCancel() {
-      alert( "You cancelled the execution." );
-    }
+    // function showOk() {
+    //   alert( "You agreed." );
+    // }
 
-    ask("Do you agree?", showOk, showCancel);
+    // function showCancel() {
+    //   alert( "You cancelled the execution." );
+    // }
+
+    // ask("Do you agree?", showOk, showCancel);
+
+
+      function ask(question, yes, no) {
+        if (confirm(question)) yes()
+        else no();
+      }
+
+      ask(
+        "Do you agree?",
+        function() { alert("You agreed."); },
+        function() { alert("You cancelled the execution."); }
+      );
+
 
   </script>
 
