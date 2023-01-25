@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <script>
+
+    let answer = parseInt(prompt("Please enter your number to be FizzBuzzed: "));
+
+    for (let i = 1; i <= answer; i++) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+      } else if (i % 3 === 0) {
+        console.log("Fizz");
+      } else if (i % 5 === 0) {
+        console.log("Buzz");
+      } else {
+        console.log(i);
+      }
+    }
+
+
+
+  </script>
+
+</body>
+</html>
+
+<!-- user inputs a number -->
+<!-- loop from 1 to the number input from the user -->
+<!-- for the numbers dividable by 3 instead print fizz -->
+<!-- for the numbers devidable by 5 instead print buzz -->
+<!-- for the numbers devidable by 3 & 5 print fizzbuzz -->
+<!-- otherwise print the current number -->
